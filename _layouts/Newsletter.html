@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<!--<![endif]-->
+
+<head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Three Dots In A Row...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href=""> </head>
+
+<body>
+     {% include navigation.html %}
+   
+           <div class="main-container">
+            <div class="intro-wrapper">
+            <h3 class="pageTitle">Recent Posts</h3>
+    
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
+       <!--  </div>
+</div> -->
+        
+</div>
+</div>
+</body>
+
+{% include footer.html %}
+</html>
