@@ -18,6 +18,9 @@
             rel="stylesheet">
          <link rel="stylesheet" type="text/css" href="default.css">
          <link id="theme-style" rel="stylesheet" type="text/css" href="">
+         {% if site.google_analytics and jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
       </head>
       <body>
          <div class="main-container">
